@@ -18,13 +18,14 @@
 			color: #2196F3;
 	&__links
 		display: flex
+		align-items: center
 		&-link 
 			display: flex
 			list-style-type: none
 			li
 				margin-right: 50px
 			li:nth-child(3)
-				margin-right: 331px
+				margin-right: 305px
 			a
 				font-weight: 700;
 				font-size: 14px;
@@ -37,19 +38,47 @@
 		&-contact
 			list-style-type: none
 			display: flex
-			li
+			margin-left: 25px
+			&__element__item1
+				position: relative
 				margin-right: 50px
-			li:nth-child(2)
-				margin-right: 0
-			a
 				font-weight: 700;
 				font-size: 14px;
-				line-height: 16px;
+				line-height: 18px;
 				letter-spacing: 0.02em;
 				color: #757575;
 				text-decoration: none
-			a:hover 
-				color: #2196F3;
+				&::before
+					content: ''
+					position: absolute
+					left: -25px
+					width: 16px
+					height: 16px
+					background: url('../img/svg/envelope.svg') center  no-repeat
+				&:hover
+					color: #2196F3;
+					&::before
+						background: url('../img/svg/envelopeblue.svg') center  no-repeat
+			&__element__item2
+				position: relative
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 18px;
+				letter-spacing: 0.02em;
+				color: #757575;
+				text-decoration: none
+				&::before
+					content: ''
+					position: absolute
+					left: -25px
+					width: 16px
+					height: 16px
+					background: url('../img/svg/phone.svg') center  no-repeat
+				&:hover
+					color: #2196F3;
+					&::before
+						background: url('../img/svg/phoneblue.svg') center  no-repeat
+
 
 
 
