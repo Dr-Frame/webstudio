@@ -13,7 +13,7 @@
             color: #fff
             text-decoration: none
             span
-                color: #2196F3;
+                color: $hover-color
         address
             display: flex
             flex-direction: column
@@ -60,15 +60,16 @@
                     border-radius: 50%
                     background: rgba(255, 255, 255, 0.1);
                     transition: 0.3s all
-                    &:hover
-                        background-color: #2196F3;
+                    &:hover,
+                    &:focus
+                        background-color: $hover-color
                     i
                         position: absolute
                         top: 50%
                         left: 50%
                         transform: translate(-50%, -50%)
                         font-size: 20px
-                        color: #fff
+                        color: $active-btn-color
 
 
 
